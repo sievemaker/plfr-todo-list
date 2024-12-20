@@ -4,14 +4,13 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import org.antlr.v4.runtime.misc.NotNull;
-
 import java.util.UUID;
 
 @Entity
