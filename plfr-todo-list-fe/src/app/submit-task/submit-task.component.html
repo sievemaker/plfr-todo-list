@@ -3,13 +3,13 @@
     <!-- Title Field -->
     <div class="form-group">
       <mat-form-field class="form-field" appearance="fill">
-        <mat-label>Title</mat-label>
+        <mat-label>Tytuł</mat-label>
         <input matInput formControlName="title" />
         <mat-error *ngIf="taskForm.controls['title'].hasError('required')">
-          Title is required.
+          Tytuł jest wymagany.
         </mat-error>
         <mat-error *ngIf="taskForm.controls['title'].hasError('minlength')">
-          Title must be at least 3 characters long.
+          Tytuł musi mieć przynajmniej 3 znaki.
         </mat-error>
       </mat-form-field>
     </div>
@@ -17,7 +17,7 @@
     <!-- Description Field -->
     <div class="form-group">
       <mat-form-field class="form-field" appearance="fill">
-        <mat-label>Description</mat-label>
+        <mat-label>Opis</mat-label>
         <textarea matInput formControlName="description"></textarea>
       </mat-form-field>
     </div>
@@ -25,7 +25,7 @@
     <!-- Submit Button -->
     <div class="form-group button-group">
       <button mat-raised-button color="primary" type="submit" [disabled]="taskForm.invalid">
-        Submit Task
+        Dodaj
       </button>
     </div>
   </form>
